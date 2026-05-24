@@ -1,0 +1,6 @@
+{
+  "name": "Satellite Tracker",
+  "description": "Real-time satellite tracker with map visualization.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

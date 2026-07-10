@@ -1,34 +1,31 @@
-# Orbital-X SpaceX Tracker
+# 🛰️ Orbital-X (SpaceX Tracker)
 
-Orbital-X is a high-performance Android application engineered for space enthusiasts and researchers to track SpaceX missions and Starlink satellite constellations. Utilizing real-time orbital data, the app provides a comprehensive overview of launch schedules, mission histories, and live satellite positioning.
+**A high-performance Android engine for tracking the future of aerospace.**
 
-The project emphasizes a clean, reactive UI and seamless integration with celestial data streams to deliver a premium tracking experience.
+Orbital-X is the ultimate tool for space enthusiasts, engineered to provide real-time telemetry and mission data for SpaceX launches and Starlink satellite constellations. Built with a focus on speed and data accuracy, it transforms raw orbital parameters into a stunning mobile experience.
 
-## 🛰️ Development Setup
+---
 
-Ensure your local environment is configured to build and deploy the Orbital-X application.
+## 🌌 Core Capabilities
 
-### Prerequisites
+- **Mission Telemetry**: Real-time launch countdowns, payload details, and landing target tracking using the **SpaceX (r-spacex) API**.
+- **Starlink Live Map**: A reactive, canvas-drawn visualization of the Starlink constellation with live orbital positioning.
+- **Launch History**: A comprehensive, searchable database of every SpaceX mission from Falcon 1 to Starship.
+- **Notification Engine**: High-priority alerts for mission status changes, launch windows, and static fire tests.
 
-- [Android Studio](https://developer.android.com/studio)
-- Active internet connection for satellite data synchronization
+---
 
-### Local Execution
+## 🛠️ Engineering Details
 
-1. **Project Import**
-   Open Android Studio and choose **Open** to import the Orbital-X source code.
+- **API Layer**: Native integration with the **SpaceX REST API** and **NORAD TLE data** for satellite tracking.
+- **Rendering**: Custom Canvas drawing for orbital path projections.
+- **State Management**: Kotlin Coroutines and StateFlow for real-time data streaming without UI lag.
 
-2. **Dependency Resolution**
-   During the initial import, Android Studio will automatically resolve Gradle dependencies. Ensure this process completes without errors to maintain build integrity.
+---
 
-3. **Security & API Configuration**
-   The tracking engine utilizes AI-enhanced data parsing.
-   - Create a `.env` file in the project root.
-   - Set the following variable: `GEMINI_API_KEY=your_api_key`
-   - Use `.env.example` as a template for your configuration.
+## 🚀 Installation
 
-4. **Gradle Adjustments**
-   For local testing, verify your `app/build.gradle.kts` does not require external signing certificates. You may need to comment out or remove specific `signingConfig` lines to use the default debug key.
-
-5. **Run the Application**
-   Deploy the build to an Android Emulator or a physical device via the **Run** command in Android Studio.
+1.  **Clone**: `git clone https://github.com/TheGitCommitMan/Orbital-X-SpaceXTracker.git`
+2.  **Import**: Open in Android Studio.
+3.  **Sync**: Allow Gradle to resolve dependencies for NASA/SpaceX data bridges.
+4.  **Run**: Deploy to an Android device with Play Services enabled.
